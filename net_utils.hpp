@@ -130,7 +130,7 @@ static string get_dev_by_ip(string ip_addr)
 }
 
 // input : ens10f1
-// output : 0000:e3:00.1 域(16位), 总线(8位), 设备(5位00-1f)和功能(3位0-8)
+// output : 0000:e3:00.1, including field(16 bit), bus(8 bit), device(5 bit, 00-1f) and function(3bit, 0-8)
 static string get_pci_by_dev(string dev)
 {
     int sock = socket(PF_INET, SOCK_DGRAM, 0);
