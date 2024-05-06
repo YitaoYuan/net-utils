@@ -1,5 +1,8 @@
 // https://github.com/YitaoYuan/net-utils
 
+#ifndef __NET_UTILS_HPP__
+#define __NET_UTILS_HPP__
+
 #include <cstdio>
 #include <stdint.h>
 #include <vector>
@@ -203,3 +206,4 @@ static vector<int> get_cpu_list_by_socket(int socket)
     if(socket < 0 || socket >= cpu_list.size()) return {};
     return cpu_list[socket];
 }
+#endif
